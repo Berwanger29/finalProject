@@ -17,13 +17,13 @@
                     <a href="#" class="nav-branding">SÃO</a>
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a class="nav-link">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Gallery</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Join Us</a>
+                            <a class="nav-link" href="#form">Contact Us</a>
                         </li>
                     </ul>
                     <div class="hamburguer">
@@ -39,7 +39,7 @@
                 <h2>Plant House</h2>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-image-container">
                 <div class="image-rounded">
                     <img src="assets/plant_circle.jpg" alt="planta">
@@ -56,7 +56,7 @@
                 <a href="#">Read more</a>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="gallery-text-container">
                 <h3>Gallery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor at erat vitae scelerisque. Sed
@@ -86,35 +86,49 @@
                 </div>
             </div>
         </section>
-        <section class="form">
+        <section class="form" id="form">
             <div class="form-text-container">
-                <h3>Join us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Contact us</h3>
+
                 <form class="form-field">
+                    <label for="email"></label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <input type="email" placeholder="your@email.com" id="input-email">
-                    <button class="form-btn">SUBSCRIBE</button>
+                    <button class="form-btn" onclick="submitForm()">SUBSCRIBE</button>
                 </form>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="more-contact">
             <div class="contact-text-container">
-                <h3>Contacts</h3>
-                <p>Adress: rua de Francesco Bonso, 29</p>
-                <p>Phone: +123456789</p>
-                <ul class="contact-list">
-                    <li class="contact-list-item">
-                        <a class="contact-link">
-                            
-                        </a>
-                    </li>
-                </ul>
+                <div class="texts-block">
+                    <h4>Contacts</h4>
+                    <p>Adress: rua de Francesco Bonso, 29</p>
+                    <p>Phone: +123456789</p>
+                </div>
+                <div class="texts-block">
+                    <ul class="contact-list">
+                        <h4>Social</h4>
+                        <li class="contact-list-item">
+                            <a class="contact-link" href="https://www.instagram.com/" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="contact-list-item">
+                            <a class="contact-link" href="https://pt-br.facebook.com/" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="contact-img-container">
 
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <h6>Site feito por <a href="https://berwanger29.github.io/MyPortfolio/">Vinicius Berwanger</a> </h6>
+    </footer>
 
     <script src="script.js"></script>
 </body>

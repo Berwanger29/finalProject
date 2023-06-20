@@ -10,3 +10,8 @@ document.querySelectorAll(".nav-item").forEach(n=> n.addEventListener("click", (
     hamburguer.classList.remove("active")
     navMenu.classList.remove("active")
 }))
+
+
+function submitForm(){
+    alert('Action submited, thanks')
+}

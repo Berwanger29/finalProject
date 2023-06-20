@@ -17,6 +17,9 @@
 
     color: var(--color-text);
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     background-color: var(--color-background);
@@ -88,12 +91,13 @@ a {
 }
 
 .greetings-container-title h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: 'DM Serif Display', serif;
 }
 
 .greetings-container-title h2 {
     font-size: 1.6rem;
+    text-align: center;
 }
 
 
@@ -103,13 +107,16 @@ a {
     display: flex;
     flex-direction: row;
     padding: 0 40px;
-    background-color: var(--color-card);
+    background-color: #F5F9FA;
 }
 
 .about-image-container {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+ 
 .image-rounded {
     width: 500px;
     height: 500px;
@@ -151,11 +158,11 @@ a {
 /* GALLERY */
 .gallery {
     background-color: var(--color-card);
-    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 0 200px 0;
 }
 
 .gallery-text-container {
@@ -178,25 +185,29 @@ a {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    row-gap: 15px;
+    row-gap: 30px;
+    gap: 20px;
 }
 
 .gallery-card {
-    height: 20vh;
-    width: 20vh;
+    max-width: 100%;
+    height: 30vh;
+    border-radius: 15px;
 }
 
 .gallery-card-img {
     width: 100%;
     height: 100%;
     box-shadow: 2px 2px 8px gray;
+    border-radius: 15px;
 }
 
 
 /* FORM */
 .form {
     height: 80vh;
+    width: 100vw;
+    background-color: #E2E4E5;
     background-image: url(assets/plant_contact.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -204,13 +215,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 40%;
+    padding-left: 600px;
 }
 
 
 .form-text-container {
-    width: 40%;
-   
+    width: 50%;
+    max-width: 350px;
 }
 
 .form-text-container h3 {
@@ -245,6 +256,38 @@ a {
     padding: 10px 20px;
     width: 80%;
     border: 2px solid;
+}
+
+.contact{
+    height: 25vh;
+    width: 100vw;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact h4{
+    font-size: 1.6rem;
+}
+
+.contact-text-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.contact-link{
+    text-decoration: underline;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: underline;
 }
 
 @media(max-width: 768px) {
