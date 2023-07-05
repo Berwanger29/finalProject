@@ -17,9 +17,10 @@
 
     color: var(--color-text);
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     background-color: var(--color-background);
@@ -27,6 +28,15 @@ body {
 
 
 /* MENU HAMBURGUER */
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 24px;
+
+}
+
 li {
     list-style: none;
 }
@@ -35,14 +45,15 @@ a {
     text-decoration: none;
 }
 
-.navbar {
-    min-height: 70px;
+#nav ul {
+    width: 400px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
 }
+
+
 
 
 
@@ -85,7 +96,7 @@ a {
     align-items: center;
     justify-content: center;
 }
- 
+
 .image-rounded {
     width: 500px;
     height: 500px;
@@ -205,13 +216,13 @@ a {
     margin-bottom: 40px;
 }
 
-.form-field{
+.form-field {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#input-email{
+#input-email {
     width: 100%;
     padding: 10px 20px;
     border: none;
@@ -219,7 +230,7 @@ a {
     margin-bottom: 10px;
 }
 
-.form-btn{
+.form-btn {
     font-family: var(--font-titles);
     font-size: .8rem;
     padding: 10px 20px;
@@ -227,7 +238,7 @@ a {
     border: 2px solid;
 }
 
-.contact{
+.contact {
     height: 25vh;
     width: 100vw;
     padding: 0 10%;
@@ -237,25 +248,25 @@ a {
     justify-content: flex-end;
 }
 
-.contact h4{
+.contact h4 {
     font-size: 1.6rem;
 }
 
-.contact-text-container{
+.contact-text-container {
     display: flex;
     width: 50%;
     justify-content: space-between;
 }
 
-.contact-link{
+.contact-link {
     text-decoration: underline;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
-.footer a{
+.footer a {
     text-decoration: underline;
 }
 
@@ -263,63 +274,71 @@ a {
 
     #menu {
         z-index: 2;
-      }
-      
-      #menu-bar {
+    }
+
+    #menu-bar {
         width: 45px;
         height: 40px;
         margin: 30px 0 20px 20px;
         cursor: pointer;
-      }
-      
-      .bar {
+    }
+
+    .bar {
         height: 5px;
         width: 100%;
         background-color: var(--color-text);
         display: block;
         border-radius: 5px;
         transition: 0.3s ease;
-      }
-      
-      #bar1 {
+    }
+
+    #bar1 {
         transform: translateY(-4px);
-      }
-      
-      #bar3 {
+    }
+
+    #bar3 {
         transform: translateY(4px);
-      }
-      
-      .nav {
+    }
+
+    #nav ul {
+        display: block;
+        padding-top: 0;
+    }
+
+
+    .nav {
         transition: 0.3s ease;
         display: none;
-      }
-      
-      .nav ul {
+    }
+
+    .nav ul {
         padding: 0 22px;
-      }
-      
-      .nav li {
+    }
+
+    .nav li {
         list-style: none;
         padding: 12px 0;
-      }
-      
-      .nav li a {
+    }
+
+    .nav li a {
         color: white;
         font-size: 20px;
         text-decoration: none;
-      }
-      
-      .nav li a:hover {
+    }
+
+    .nav li a:hover {
         font-weight: bold;
-      }
-      
-      .menu-bg, #menu {
+    }
+
+    .menu-bg,
+    #menu {
         top: 0;
         left: 0;
         position: absolute;
-      }
-      
-      .menu-bg {
+
+    }
+
+    .menu-bg {
         z-index: 1;
         width: 0;
         height: 0;
@@ -327,32 +346,135 @@ a {
         background: radial-gradient(circle, var(--color-text), var(--color-text));
         border-radius: 50%;
         transition: 0.3s ease;
-      }
-      
-      .change {
+    }
+
+    .change {
         display: block;
-      }
-      
-      .change .bar {
+    }
+
+    .change .bar {
         background-color: white;
-      }
-      
-      .change #bar1 {
+    }
+
+    .change #bar1 {
         transform: translateY(4px) rotateZ(-45deg);
-      }
-      
-      .change #bar2 {
+    }
+
+    .change #bar2 {
         opacity: 0;
-      }
-      
-      .change #bar3 {
+    }
+
+    .change #bar3 {
         transform: translateY(-6px) rotateZ(45deg);
-      }
-      
-      .change-bg {
+    }
+
+    .change-bg {
         width: 520px;
         height: 460px;
-        transform: translate(-60%,-30%);
-      }
-    
+        transform: translate(-60%, -30%);
+    }
+
+
+    .about {
+        height: auto;
+        padding: 30px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-text-container {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .image-rounded {
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .gallery-pictures {
+        width: 75vw;
+    }
+
+    .gallery-card {
+        max-width: 100%;
+        max-width: 180px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .form {
+        height: 80vh;
+        width: 100vw;
+        background-color: none;
+        background-image: url(assets/plant_contact.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .form-text-container {
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(7px);
+        width: 50%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .contact {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .contact-text-container {
+        max-width: 800px;
+        width: 80%;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-width: 767px) {
+
+
+    * {
+        font-size: 1rem;
+    }
+
+
+    .greetings-container-title h1 {
+        font-size: 5rem;
+    }
+
+    .greetings-container-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .gallery-pictures {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .form {
+        background-image: none;
+    }
+
+    .form-text-container {
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(7px);
+        width: 90%;
+        max-width: 350px;
+        padding: 40px 10px;
+    }
 }
