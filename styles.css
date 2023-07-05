@@ -182,6 +182,17 @@ a {
     border-radius: 15px;
 }
 
+.frame-responsivity{
+    margin-top: 100px;
+    width: 840px;
+    height: 517.5px;
+}
+
+.frame{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* FORM */
 .form {
@@ -239,11 +250,10 @@ a {
 }
 
 .contact {
-    height: 25vh;
     width: 100vw;
-    padding: 0 10%;
+    padding: 40px 10%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
@@ -254,8 +264,10 @@ a {
 
 .contact-text-container {
     display: flex;
-    width: 50%;
+    width: 800px;
+    justify-content: space-around;
     justify-content: space-between;
+    
 }
 
 .contact-link {
@@ -405,6 +417,11 @@ a {
         border-radius: 15px;
     }
 
+    .frame-responsivity{
+        width: 560px;
+        height: 315px;
+    }
+
     .form {
         height: 80vh;
         width: 100vw;
@@ -463,7 +480,11 @@ a {
         width: 50%;
         display: grid;
         grid-template-columns: 1fr;
+    }
 
+    .frame-responsivity{
+        width: 280px;
+        height: 157.5px;
     }
 
     .form {
